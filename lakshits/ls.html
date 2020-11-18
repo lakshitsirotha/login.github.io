@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lakshit sirotha</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+         <div class="form-box">
+          <div class="button-box">
+              <div id="btn"></div>
+               <button type="button" class="toggle-btn" onclick="login()">LOG IN</button>
+               <button type="button" class="toggle-btn" onclick="register()">Register</button>
+              
+          </div>
+             <div class="social-icons">
+                                                         <button type="button"><a href="https://discord.gg/N3u2DBK"><img src="images/discord.png"></a></button>
+                                                         <button type="button"><a href="mailto:lakshitsirotha@gmail.com"><img src="images/gmail.png"></a></button>
+                                                         <button type="button"><a href="https://www.youtube.com/channel/UCn53tKwgnmifHN6qiih5Qiw/featured"><img src="images/youtube.png"></a></button>     
+                                                         <button type="button"><a href="https://instagram.com/lsgameryt?igshid=14pl40v7dxnst"> 
+                                                             <img src="images/instagram.png"></a></button>
+                                                       <button type="button"> <a href="https://twitter.com/LakshitYt?s=08"><img src="images/twitter.png"></a></button>
+                                                     
+             </div>
+             <form id="login" class="input-group">
+              <input type="text" class="input-field" placeholder="User Id" required>
+              <input type="text" class="input-field" placeholder="Enter Password" required>
+              <input type="checkbox" class="check-box"><span>Remember Password</span>
+              <button type="submit" class="submit-btn">LOG IN</button> 
+                 
+             </form>
+             <form id="register" class="input-group">
+              <input type="email" class="input-field" placeholder="Email Id" required>
+              <input type="text" class="input-field" placeholder="Enter Password" required>     
+              <input type="checkbox" class="check-box"><span>I agree to the Terms & Conditons</span>
+              <button type="submit" class="submit-btn">Register</button> 
+                 
+             </form>
+         </div>
+        </div>     
+        
+        <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "125px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "570px";
+            z.style.left = "0px";
+        }
+            
+            
+        </script>
+        
+        @media (width: 300px;){
+                
+  
+        function register(){
+            z.style.left = "150px";
+        }
+        }
+        
+    </body>
+</html>
